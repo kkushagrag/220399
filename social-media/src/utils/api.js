@@ -9,9 +9,9 @@ export const registerCompany = async () => {
     console.log("Registering company...");
     const response = await axios.post(`${BASE_URL}/register`, {
       companyName: "goMart",
-      ownerName: "Astha",
-      rollNo: "200367",
-      ownerEmail: "astha.rai.22cse@bmu.edu.in",
+      ownerName: "Kushagra",
+      rollNo: "200399",
+      ownerEmail: "kushagra.gangwar.22cse@bmu.edu.in",
       accessCode: "PRoJlR",
     });
     console.log("Registration successful:", response.data);
@@ -30,9 +30,9 @@ export const getAuthToken = async (clientID, clientSecret) => {
       companyName: "goMart",
       clientID,
       clientSecret,
-      ownerName: "Astha",
-      ownerEmail: "astha.rai.22cse@bmu.edu.in",
-      rollNo: "200367",
+      ownerName: "Kushagra",
+      ownerEmail: "kushagra.gangwar.22cse@bmu.edu.in",
+      rollNo: "200399",
     });
     console.log("Authorization token received:", response.data);
     return response.data;
